@@ -91,7 +91,6 @@ h3 {
 .header-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .nav-link {
@@ -275,4 +274,265 @@ h3 {
 
 .num-text span {
   color: #D1A954;
+}
+
+/* Staging */
+.slider {
+  display: flex;
+  margin-left: 150px;
+  margin-bottom: 150px;
+}
+
+.slider-block {
+  position: relative;
+  margin-right: 0;
+  width: 442px;
+  height: 550px;
+}
+
+.slide1 {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)),
+    url(../img/staging/1.png) center;
+}
+
+.slide2 {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)),
+    url(../img/staging/2.png) center;
+}
+
+.slide3 {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)),
+    url(../img/staging/3.png) center;
+}
+
+.slide4 {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)),
+    url(../img/staging/4.png) center;
+}
+
+
+.staging-text {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.staging-date {
+  position: absolute;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+  bottom: 40px;
+  left: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.awards {
+  background: linear-gradient(0deg, rgba(51, 51, 51, 0.9), rgba(51, 51, 51, 0.9)),
+    url(../img/awards_bg.png) center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+  padding: 126px 190px;
+}
+
+.awards-years {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
+}
+
+.awards-year {
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 98px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #D1A954;
+}
+
+.star {
+  margin-right: 25px;
+}
+
+.awards-text {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150%;
+  margin-top: 25px;
+}
+
+/* Partners */
+
+.partners-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+
+.partners-image {
+  flex-basis: 25%;
+  max-width: 200px;
+  margin-right: 75px;
+}
+
+/* Philanthropy */
+
+.philanthropy-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.phone {
+  margin-bottom: 25px;
+}
+
+.e-mail {
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-right: 30px;
+  max-width: 390px;
+}
+.form-input {
+  background: #444444;
+  border: 1px solid #616161;
+  padding: 10px 0 10px 15px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 150%;
+  height: 35px;
+  margin-bottom: 30px;
+}
+
+::-webkit-input-placeholder {
+  color: #989898;
+}
+
+::-moz-placeholder {
+  color: #989898;
+}
+
+:-moz-placeholder {
+  color: #989898;
+}
+
+:-ms-input-placeholder {
+  color: #989898;
+}
+
+.message {
+  margin: 0;
+  flex-basis: 50%;
+}
+
+.form-text {
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #989898;
+}
+
+.textarea-btn {
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  justify-content: end;
+}
+
+.form-input.message {
+  max-height: 100px;
+  margin-bottom: 40px;
+}
+
+.footer-btn {
+  max-width: 190px;
+  margin-left: auto;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #565656;
+  padding: 30px 0;
+}
+
+.copyright,
+.development {
+  font-size: 12px;
+  line-height: 150%;
+  color: #989898;
+}
+
+@media (max-width: 1200px) {
+
+  .container {
+  max-width: 800px;
+    }
+
+  .header-container {
+    max-width: 650px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-menu {
+    margin-bottom: 50px;
+  }
+  .nav-link {
+    margin-right: 10px;
+  }
+
+  .header-content {
+    margin-right: 0;
+  }
+  .header-content-texts {
+    max-width: 350px;
+  }
 }
